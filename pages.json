@@ -3,7 +3,27 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "一番赏"
+				"navigationBarTitleText": "一番赏",
+				"enablePullDownRefresh":true
+			}
+		},{
+			"path": "pages/orderDetails/index",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor":"#FF2742",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/orderList/index",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+			}
+		},
+		{
+			"path": "pages/details/index",
+			"style": {
+				"navigationBarTitleText": "详情"
 			}
 		}
 	],
@@ -12,6 +32,24 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"rpxCalcMaxDeviceWidth": 2000
+	},
+	"tabBar": {
+	    "color": "#888888",
+	    "selectedColor": "#FDD000",
+	    "borderStyle": "black",
+	    "backgroundColor": "#000000",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "",
+	        "selectedIconPath": "",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/orderList/index",
+	        "iconPath": "",
+	        "selectedIconPath": "",
+	        "text": "订单"
+	    }]
 	}
 }

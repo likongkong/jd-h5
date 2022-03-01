@@ -7,6 +7,15 @@ export const yifanshangList = (query) => {
 		query: {...query}
 	})
 }
+//一番赏详情
+export const yifanshangInfo = (query) => {
+	return apiResquest({
+		url: 'spread.php?mod=yifanshang&operation=info',
+		method: 'GET',
+		query: {...query}
+	})
+}
+
 
 //获取签名
 // export const wxGetJssdkConfig = (query) => {
